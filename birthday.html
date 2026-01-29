@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday Shreyashi 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+            background: linear-gradient(#ffe6f0, #fff);
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 45px;
+            color: #ff1493;
+        }
+
+        img {
+            margin-top: 20px;
+            width: 220px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .flower {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(110vh);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>💖 VERY VERY HAPPY BIRTHDAY 💖<br>Shreyashi 🎂</h1>
+
+<!-- Replace image.jpg with her photo -->
+<img src="shreyoshi.jpg" alt="Shreyashi">
+
+<script>
+    const flowers = ["🌸","🌼","🌷","💐","🌺"];
+
+    for (let i = 0; i < 30; i++) {
+        let flower = document.createElement("div");
+        flower.className = "flower";
+        flower.innerHTML = flowers[Math.floor(Math.random() * flowers.length)];
+        flower.style.left = Math.random() * 100 + "vw";
+        flower.style.animationDuration = (3 + Math.random() * 5) + "s";
+        flower.style.fontSize = (20 + Math.random() * 20) + "px";
+        document.body.appendChild(flower);
+    }
+</script>
+
+</body>
+</html>

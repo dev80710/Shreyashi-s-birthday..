@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surprise 🎁</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#ffd1dc, #fff);
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        .popup {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background: #ff69b4;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+<div class="popup">
+    <h2>🎀 A Little Surprise 🎀</h2>
+    <button onclick="goSurprise()">Click for Surprise</button>
+</div>
+
+<script>
+    function goSurprise() {
+        window.location.href = "birthday.html";
+    }
+</script>
+
+</body>
+</html>
